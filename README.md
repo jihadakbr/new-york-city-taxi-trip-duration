@@ -47,7 +47,7 @@ Details about the dataset can be found on the [Kaggle competition page](https://
 - Applied scaling and encoding to numeric and categorical features.
 
 ### 2. Feature Engineering
-- Engineered features like trip distance (haversine and Manhattan), average speed, and pickup/dropoff clusters.
+- Engineered features like trip distance (Open Source Routing Machine), average speed, and pickup/dropoff clusters.
 - Optimized geospatial features by restricting coordinates to valid NYC boundaries.
 
 ### 3. Exploratory Data Analysis (EDA)
