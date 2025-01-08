@@ -20,13 +20,23 @@ This project aims to predict taxi trip durations in New York City using 2016 dat
 
 ## Dataset Overview
 
-The dataset includes taxi trip data for 2016 in New York City, provided by the [NYC Taxi and Limousine Commission](https://www.kaggle.com/competitions/nyc-taxi-trip-duration). It contains the following information:
-- Pickup and dropoff coordinates (latitude, longitude)
-- Trip timestamps
-- Trip duration (in seconds)
-- Passenger count
-- Vendor information
-- Store and forward flags
+The dataset contains detailed trip records from 2016 provided by the [NYC Taxi and Limousine Commission](https://www.kaggle.com/competitions/nyc-taxi-trip-duration). It includes the following features:
+
+| **Column**            | **Description**                                                                 |
+|------------------------|---------------------------------------------------------------------------------|
+| `id`                  | Unique identifier for each trip.                                               |
+| `vendor_id`           | Code for the vendor providing the trip.                                        |
+| `pickup_datetime`     | Timestamp for when the trip started.                                           |
+| `dropoff_datetime`    | Timestamp for when the trip ended.                                             |
+| `passenger_count`     | Number of passengers in the taxi.                                              |
+| `pickup_longitude`    | Longitude of the pickup location.                                              |
+| `pickup_latitude`     | Latitude of the pickup location.                                               |
+| `dropoff_longitude`   | Longitude of the dropoff location.                                             |
+| `dropoff_latitude`    | Latitude of the dropoff location.                                              |
+| `store_and_fwd_flag`  | Whether the trip data was stored and forwarded due to connectivity issues.      |
+| `trip_duration`       | Duration of the trip in seconds (target variable).                             |
+
+Dataset size: **1,458,644 rows** with no missing values.
 
 Details about the dataset can be found on the [Kaggle competition page](https://www.kaggle.com/competitions/nyc-taxi-trip-duration).
 
@@ -43,11 +53,11 @@ Details about the dataset can be found on the [Kaggle competition page](https://
 ## Approach
 
 ### 1. Data Preprocessing
-- Cleaned and processed raw data to handle missing values and outliers.
+- Cleaned and processed raw data to handle outliers and inconsistencies.
 - Applied scaling and encoding to numeric and categorical features.
 
 ### 2. Feature Engineering
-- Engineered features like trip distance (Open Source Routing Machine), average speed, and pickup/dropoff clusters.
+- Engineered features like trip distance (haversine and Manhattan), average speed, and pickup/dropoff clusters.
 - Optimized geospatial features by restricting coordinates to valid NYC boundaries.
 
 ### 3. Exploratory Data Analysis (EDA)
@@ -92,6 +102,16 @@ Details about the dataset can be found on the [Kaggle competition page](https://
 - **Performance Metric**: RMSLE (Root Mean Squared Logarithmic Error)
 - **Achieved Score**: 0.55 RMSLE
 - **Business Alignment**: Prioritized relative error over absolute error to meet business objectives.
+
+![dropoff cluster](https://raw.githubusercontent.com/jihadakbr/new-york-city-taxi-trip-duration/refs/heads/main/img/dropoff_cluster.png)
+
+![dropoff heatmap marker](https://raw.githubusercontent.com/jihadakbr/new-york-city-taxi-trip-duration/refs/heads/main/img/dropoff_heatmap_marker.png)
+
+![dropoff plot](https://raw.githubusercontent.com/jihadakbr/new-york-city-taxi-trip-duration/refs/heads/main/img/dropoff_plot.png)
+
+![elbow dropoff](https://raw.githubusercontent.com/jihadakbr/new-york-city-taxi-trip-duration/refs/heads/main/img/elbow_dropoff.png)
+
+![rsmle score](https://raw.githubusercontent.com/jihadakbr/new-york-city-taxi-trip-duration/refs/heads/main/img/rsmle_score.png)
 
 ---
 
