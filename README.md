@@ -136,6 +136,6 @@ jupyter notebook
 # Contact
 For questions or collaborations, feel free to reach out:
 
-- Email: [jihadakbr@gmail.com](jihadakbr@gmail.com)
+- Email: [jihadakbr@gmail.com](mailto:jihadakbr@gmail.com)
 - LinkedIn: [linkedin.com/in/jihadakbr](https://www.linkedin.com/in/jihadakbr)
 - Portfolio: [jihadakbr.github.io](https://jihadakbr.github.io/)
