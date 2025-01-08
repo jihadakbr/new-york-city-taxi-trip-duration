@@ -55,19 +55,19 @@ More details can be found on the [Kaggle competition page](https://www.kaggle.co
 
 The project is divided into four main notebooks, each focusing on a specific phase:
 
-1. [New York City Taxi Trip Duration - EDA.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - EDA.ipynb)
+1. **[New York City Taxi Trip Duration - EDA.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/blob/main/New%20York%20City%20Taxi%20Trip%20Duration%20-%20EDA.ipynb)**  
    - Objective: Perform exploratory data analysis (EDA).
    - Includes geospatial and temporal visualizations, feature correlations, and insights into trip patterns.
 
-2. **[New York City Taxi Trip Duration - ML - 1 - Baseline.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - ML - 1 - Baseline.ipynb)**  
+2. **[New York City Taxi Trip Duration - ML - 1 - Baseline.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/blob/main/New%20York%20City%20Taxi%20Trip%20Duration%20-%20ML%20-%201%20-%20Baseline.ipynb)**  
    - Objective: Build baseline machine learning models.
    - Compares simple regression models to establish a performance benchmark.
 
-3. **[New York City Taxi Trip Duration - ML - 2 - Model Selection.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - ML - 2 - Model Selection.ipynb)**  
+3. **[New York City Taxi Trip Duration - ML - 2 - Model Selection.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/blob/main/New%20York%20City%20Taxi%20Trip%20Duration%20-%20ML%20-%202%20-%20Model%20Selection.ipynb)**  
    - Objective: Select the best-performing models.
    - Compares advanced models such as Random Forest, Gradient Boosting, LightGBM, etc.
 
-4. **[New York City Taxi Trip Duration - ML - 3 - Model Tuning.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - ML - 3 - Model Tuning.ipynb)**  
+4. **[New York City Taxi Trip Duration - ML - 3 - Model Tuning.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/blob/main/New%20York%20City%20Taxi%20Trip%20Duration%20-%20ML%20-%203%20-%20Model%20Tuning.ipynb)**  
    - Objective: Tune hyperparameters of the selected model.
    - Uses techniques like grid search for optimization.
 
