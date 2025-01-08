@@ -1,6 +1,6 @@
 # NYC Taxi Trip Duration Prediction
 
-This project aims to predict taxi trip durations in New York City using 2016 data from the NYC Taxi and Limousine Commission. The project showcases advanced data analysis, feature engineering, geospatial visualizations, and machine learning workflows, leveraging business-aligned metrics to achieve optimal predictions.
+This project predicts taxi trip durations in New York City using 2016 data from the NYC Taxi and Limousine Commission. The workflow is divided into multiple Jupyter Notebooks, each focusing on a specific phase of the analysis and modeling process. The project demonstrates advanced data analysis, feature engineering, geospatial visualizations, and machine learning techniques.
 
 ---
 
@@ -8,7 +8,7 @@ This project aims to predict taxi trip durations in New York City using 2016 dat
 
 - [Dataset Overview](#dataset-overview)
 - [Objectives](#objectives)
-- [Approach](#approach)
+- [Project Workflow](#project-workflow)
 - [Key Features and Insights](#key-features-and-insights)
 - [Tools and Libraries](#tools-and-libraries)
 - [Results](#results)
@@ -38,52 +38,46 @@ The dataset contains detailed trip records from 2016 provided by the [NYC Taxi a
 
 Dataset size: **1,458,644 rows** with no missing values.
 
-Details about the dataset can be found on the [Kaggle competition page](https://www.kaggle.com/competitions/nyc-taxi-trip-duration).
+More details can be found on the [Kaggle competition page](https://www.kaggle.com/competitions/nyc-taxi-trip-duration).
 
 ---
 
 ## Objectives
 
-1. Predict NYC taxi trip durations with high accuracy to support strategic decision-making.
-2. Explore and visualize geographic and temporal trip patterns.
-3. Develop modular and scalable machine learning workflows.
+1. Explore and analyze data to uncover trends and patterns.
+2. Build a baseline machine learning model for trip duration prediction.
+3. Optimize the model for improved performance using advanced techniques.
+4. Develop reusable and modular machine learning workflows.
 
 ---
 
-## Approach
+## Project Workflow
 
-### 1. Data Preprocessing
-- Cleaned and processed raw data to handle outliers and inconsistencies.
-- Applied scaling and encoding to numeric and categorical features.
+The project is divided into four main notebooks, each focusing on a specific phase:
 
-### 2. Feature Engineering
-- Engineered features like trip distance (haversine and Manhattan), average speed, and pickup/dropoff clusters.
-- Optimized geospatial features by restricting coordinates to valid NYC boundaries.
+1. **[New York City Taxi Trip Duration - EDA.ipynb](./New York City Taxi Trip Duration - EDA.ipynb)**  
+   - Objective: Perform exploratory data analysis (EDA).
+   - Includes geospatial and temporal visualizations, feature correlations, and insights into trip patterns.
 
-### 3. Exploratory Data Analysis (EDA)
-- Conducted temporal and spatial EDA to uncover patterns in trip durations.
-- Created heatmaps and geospatial visualizations for key pickup and dropoff points.
+2. **[New York City Taxi Trip Duration - ML - 1 - Baseline.ipynb](./New York City Taxi Trip Duration - ML - 1 - Baseline.ipynb)**  
+   - Objective: Build baseline machine learning models.
+   - Compares simple regression models to establish a performance benchmark.
 
-### 4. Clustering
-- Applied K-Means clustering to identify natural pickup and dropoff clusters.
-- Visualized clusters on NYC maps to reveal geographic trip patterns and inform decision-making.
+3. **[New York City Taxi Trip Duration - ML - 2 - Model Selection.ipynb](./New York City Taxi Trip Duration - ML - 2 - Model Selection.ipynb)**  
+   - Objective: Select the best-performing models.
+   - Compares advanced models such as Random Forest, Gradient Boosting, LightGBM, etc.
 
-### 5. Machine Learning Workflow
-- Designed reusable transformer components using object-oriented programming (OOP), ensuring compatibility with scikit-learn pipelines.
-- Evaluated various models, including LightGBM, using RMSLE as the performance metric.
-- Tuned hyperparameters and optimized the final LightGBM model for best performance.
+4. **[New York City Taxi Trip Duration - ML - 3 - Model Tuning.ipynb](./New York City Taxi Trip Duration - ML - 3 - Model Tuning.ipynb)**  
+   - Objective: Tune hyperparameters of the selected model.
+   - Uses techniques like grid search for optimization.
 
 ---
 
 ## Key Features and Insights
 
 - **Feature Engineering**: Enhanced the dataset with meaningful features like distance, speed, and time-based patterns.
-- **Geospatial Analysis**: 
-  - Heatmaps of high-density pickup/dropoff points.
-  - Cluster visualizations for geographic insights.
-- **Modular Pipelines**: Reusable components for data preprocessing, ensuring efficient and scalable workflows.
-
----
+- **Geospatial Analysis**: Heatmaps of key pickup/dropoff locations and clustering of trip patterns.
+- **Scalable Workflows**: Implemented modular pipelines using scikit-learn and reusable transformer components.
 
 ## Tools and Libraries
 
@@ -131,3 +125,17 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 4. Follow the instructions in the notebooks to replicate the workflow.
+
+
+# Future Improvements
+
+1. Integrate external data sources like real-time weather and traffic information.
+2. Experiment with deep learning models (e.g., LSTMs or Transformers) to capture temporal dependencies.
+3. Build an interactive dashboard to visualize predictions and geospatial patterns.
+
+# Contact
+For questions or collaborations, feel free to reach out:
+
+- Email: [jihadakbr@gmail.com](jihadakbr@gmail.com)
+- LinkedIn: [linkedin.com/in/jihadakbr](www.linkedin.com/in/jihadakbr)
+- Portfolio: [jihadakbr.github.io](https://jihadakbr.github.io/)
