@@ -55,7 +55,7 @@ More details can be found on the [Kaggle competition page](https://www.kaggle.co
 
 The project is divided into four main notebooks, each focusing on a specific phase:
 
-1. **[New York City Taxi Trip Duration - EDA.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - EDA.ipynb)**  
+1. [New York City Taxi Trip Duration - EDA.ipynb](https://github.com/jihadakbr/new-york-city-taxi-trip-duration/New York City Taxi Trip Duration - EDA.ipynb)
    - Objective: Perform exploratory data analysis (EDA).
    - Includes geospatial and temporal visualizations, feature correlations, and insights into trip patterns.
 
