@@ -14,6 +14,7 @@ This project predicts taxi trip durations in New York City using 2016 data from 
 - [Results](#results)
 - [How to Use](#how-to-use)
 - [Future Improvements](#future-improvements)
+- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -132,6 +133,12 @@ jupyter notebook
 1. Integrate external data sources like real-time weather and traffic information.
 2. Experiment with deep learning models (e.g., LSTMs or Transformers) to capture temporal dependencies.
 3. Build an interactive dashboard to visualize predictions and geospatial patterns.
+
+# License
+
+This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE).
+
+![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
 
 # Contact
 For questions or collaborations, feel free to reach out:
